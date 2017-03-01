@@ -1,0 +1,102 @@
+/*modal (background)*/
+.modal {
+  /*hidden by default*/
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(204,255,144);
+  background-color: rgba(204,255,144,1);
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 20vh auto;
+  top: auto;
+}
+
+/*modal content */
+.modal-content {
+  /*background*/
+  background-color: #fefefe;
+  margin:   auto;
+  padding: 20px;
+  width: 800px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.2);
+}
+
+.bodyRainbowWrapper,
+.bodyIconsWrapper,
+.bodyPlaneWrapper,
+.bodyCuratorsWrapper,
+.bodyFireWrapper,
+.bodyAfterWrapper, {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text {
+  margin-left: 400px;
+  line-height: normal;
+}
+
+section.text > p {
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h2 {
+  margin-top: 60px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.modal-content > p {
+  font-size: 20px;
+}
+
+/* close */
+.close {
+  margin-top: 25px;
+  margin-right: 30px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* yep i know it's shit code but it works.
+disable modal with class "undisplayed" */
+.undisplayed {
+  pointer-events: none;
+  display: none;
+}
+.undisplayed.modal {
+
+  display: none;
+  background-color: transparent;
+}

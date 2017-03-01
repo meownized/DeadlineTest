@@ -1,0 +1,13 @@
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400i,700&subset=cyrillic-ext');
+
+@import "index.css";
+@import "modals.css";
+
+@import "modalRainbow.css";
+@import "modalIcons.css";
+@import "modalPlane.css";
+@import "modalCurators.css";
+@import "modalFire.css";
+@import "modalAfter.css";

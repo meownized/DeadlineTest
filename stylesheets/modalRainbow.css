@@ -1,0 +1,28 @@
+.imageRainbow {
+  height: 100%;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.rainbowCactus{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
+
+.rainbow {
+  position: absolute;
+  margin: 228px 20px 20px 69px;
+  height: 76px;
+}
+
+.rainbow{
+  animation: rainbowAnimation linear 7s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0%;
+}
+
+@keyframes rainbowAnimation{
+  0% { transform: scaleY(1.00); }
+  50% { transform: scaleY(1.43); }
+}

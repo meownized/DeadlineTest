@@ -1,0 +1,14 @@
+.bodyCuratorsWrapper {
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+.filval {
+  position: absolute;
+  width: 300px;
+}
+
+.textCurators {
+  position: relative;
+  padding-top: 30px;
+}

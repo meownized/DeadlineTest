@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body class="">
+
+    <section class="contentWrap">
+
+      <section class="descriptionWrap">
+        <section class="deadlineTest">
+          <h1>Дедлайн Тест</h1>
+          <p class="description">Представим, что сейчас начало февраля. Дедлайн 24 числа. Когда объявишь студентам дату дедлайна?</p>
+        </section>
+
+        <section class="date">
+          <p class="description bubble"><i class="fa fa-question-circle" aria-hidden="true"></i>Выбери дату, когда объявишь дедлайн.</p>
+          <div class="mainCactus"><img src="images/mainCactus.png" alt=""></div>
+        </section>
+      </section>
+
+      <section class="calendarWrap">
+        <p class="description month">Февраль 2017</p>
+        <div class="calendar">
+          <ul class="daysofweek">
+            <li class="days grey myBtn_multi">ПН</li>
+            <li class="days grey myBtn_multi">ВТ</li>
+            <li class="days grey myBtn_multi">СР</li>
+            <li class="days grey myBtn_multi">ЧТ</li>
+            <li class="days grey myBtn_multi">ПТ</li>
+            <li class="days red myBtn_multi">СБ</li>
+            <li class="days red myBtn_multi">ВС</li>
+          </ul>
+          <ul class="week1">
+            <li class="column grey myBtn_multi">30</li>
+            <li class="column grey myBtn_multi">31</li>
+            <li class="column work myBtn_multi">01</li>
+            <li class="column work myBtn_multi">02</li>
+            <li class="column work myBtn_multi">03</li>
+            <li class="column red myBtn_multi">04</li>
+            <li class="column red myBtn_multi">05</li>
+          </ul>
+          <ul class="week2">
+            <li class="column work myBtn_multi">06</li>
+            <li class="column work myBtn_multi">07</li>
+            <li class="column work myBtn_multi">08</li>
+            <li class="column work myBtn_multi">09</li>
+            <li class="column work myBtn_multi">10</li>
+            <li class="column red myBtn_multi">11</li>
+            <li class="column red myBtn_multi">12</li>
+          </ul>
+          <ul class="week3">
+            <li class="column work myBtn_multi">13</li>
+            <li class="column work myBtn_multi">14</li>
+            <li class="column work myBtn_multi">15</li>
+            <li class="column work myBtn_multi">16</li>
+            <li class="column work myBtn_multi">17</li>
+            <li class="column red myBtn_multi">18</li>
+            <li class="column red myBtn_multi">19</li>
+          </ul>
+          <ul class="week4">
+            <li class="column work myBtn_multi">20</li>
+            <li class="column work myBtn_multi">21</li>
+            <li class="column work myBtn_multi">22</li>
+            <li class="column work myBtn_multi">23</li>
+            <li class="deadline column myBtn_multi">24</li>
+            <li class="column red myBtn_multi">25</li>
+            <li class="column red myBtn_multi">26</li>
+          </ul>
+          <ul class="week5">
+            <li class="column work myBtn_multi">27</li>
+            <li class="column work myBtn_multi">28</li>
+            <li class="column grey myBtn_multi">01</li>
+            <li class="column grey myBtn_multi">02</li>
+            <li class="column grey myBtn_multi">03</li>
+            <li class="column red myBtn_multi">04</li>
+            <li class="column red myBtn_multi">05</li>
+          </ul>
+      </section>
+
+
+      <!-- MODALS -->
+
+      <!-- MODAL ПН -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL ВТ -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL СР -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL ЧТ -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL ПТ -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL СБ -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL ВС -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 30 -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 31 -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL  modalRainbow -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyRainbowWrapper">
+
+              <section class="imageRainbow">
+                <div class="rainbowCactus">
+                  <img src="images/rainbowCactus.png">
+                </div>
+                <div class="rainbow">
+                  <img src="images/rainbow.png">
+                </div>
+              </section>
+
+              <section class="text">
+                <h2>Ты ー милаха</h2>
+                <p>Посоветовать нечего, все классно,<br> студенты сами набьют шишки, сделают,<br> переделают, и все успеют в срок и по ТЗ.</p>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MODAL 2 modalRainbow -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyRainbowWrapper">
+
+              <section class="imageRainbow">
+                <div class="rainbowCactus">
+                  <img src="images/rainbowCactus.png">
+                </div>
+                <div class="rainbow">
+                  <img src="images/rainbow.png">
+                </div>
+              </section>
+
+              <section class="text">
+                <h2>Ты ー милаха</h2>
+                <p>Посоветовать нечего, все классно,<br> студенты сами набьют шишки, сделают,<br> переделают, и все успеют в срок и по ТЗ.</p>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MODAL 3 modalRainbow -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyRainbowWrapper">
+
+              <section class="imageRainbow">
+                <div class="rainbowCactus">
+                  <img src="images/rainbowCactus.png">
+                </div>
+                <div class="rainbow">
+                  <img src="images/rainbow.png">
+                </div>
+              </section>
+
+              <section class="text">
+                <h2>Ты ー милаха</h2>
+                <p>Посоветовать нечего, все классно,<br> студенты сами набьют шишки, сделают,<br> переделают, и все успеют в срок и по ТЗ.</p>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MODAL 4 ВЫХОДНОЙ-->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 5 ВЫХОДНОЙ-->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 6 modalIcons-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyIconsWrapper">
+
+              <section class="animationWrapper">
+
+                <div class="planet" id="one"><img src="images/AI.png"></div>
+                <div class="planet"id="two"><img src="images/ID.png"></div>
+                <div class="planet"id="three"><img src="images/PS.png"></div>
+
+                <figure><img src="images/cactus2weeks.png"></figure>
+              </section>
+
+              <section class="text textIcon">
+                <h2 class="headerText">Следует поднапрячься</h2>
+                <p class="captionText">Помоги студенту с планом, <br>дай необходимые материалы и методики,<br> отойди в сторонку и не мешай</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 7 modalIcons-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyIconsWrapper">
+
+              <section class="animationWrapper">
+
+                <div class="planet" id="one"><img src="images/AI.png"></div>
+                <div class="planet"id="two"><img src="images/ID.png"></div>
+                <div class="planet"id="three"><img src="images/PS.png"></div>
+
+                <figure><img src="images/cactus2weeks.png"></figure>
+              </section>
+
+              <section class="text textIcon">
+                <h2 class="headerText">Следует поднапрячься</h2>
+                <p class="captionText">Помоги студенту с планом, <br>дай необходимые материалы и методики,<br> отойди в сторонку и не мешай</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 8 modalIcons-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyIconsWrapper">
+
+              <section class="animationWrapper">
+
+                <div class="planet" id="one"><img src="images/AI.png"></div>
+                <div class="planet"id="two"><img src="images/ID.png"></div>
+                <div class="planet"id="three"><img src="images/PS.png"></div>
+
+                <figure><img src="images/cactus2weeks.png"></figure>
+              </section>
+
+              <section class="text textIcon">
+                <h2 class="headerText">Следует поднапрячься</h2>
+                <p class="captionText">Помоги студенту с планом, <br>дай необходимые материалы и методики,<br> отойди в сторонку и не мешай</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 9 modalIcons-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyIconsWrapper">
+
+              <section class="animationWrapper">
+
+                <div class="planet" id="one"><img src="images/AI.png"></div>
+                <div class="planet"id="two"><img src="images/ID.png"></div>
+                <div class="planet"id="three"><img src="images/PS.png"></div>
+
+                <figure><img src="images/cactus2weeks.png"></figure>
+              </section>
+
+              <section class="text textIcon">
+                <h2 class="headerText">Следует поднапрячься</h2>
+                <p class="captionText">Помоги студенту с планом, <br>дай необходимые материалы и методики,<br> отойди в сторонку и не мешай</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 10 modalIcons-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyIconsWrapper">
+
+              <section class="animationWrapper">
+
+                <div class="planet" id="one"><img src="images/AI.png"></div>
+                <div class="planet"id="two"><img src="images/ID.png"></div>
+                <div class="planet"id="three"><img src="images/PS.png"></div>
+
+                <figure><img src="images/cactus2weeks.png"></figure>
+              </section>
+
+              <section class="text textIcon">
+                <h2 class="headerText">Следует поднапрячься</h2>
+                <p class="captionText">Помоги студенту с планом, <br>дай необходимые материалы и методики,<br> отойди в сторонку и не мешай</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 11 ВЫХОДНОЙ-->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 12 ВЫХОДНОЙ -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 13 modalPlane -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyPlaneWrapper">
+
+              <section class="kamikaze">
+                <img src="images/kamikaze.png">
+              </section>
+
+              <section class="text textKamikaze">
+                <h2>Мы принесём себя <br> в жертву во имя <br> луны</h2>
+                <p>У студента только одна попытка,<br>чтобы сделать хорошо,<br>они теперь как камикадзе</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 14 modalPlane -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyPlaneWrapper">
+
+              <section class="kamikaze">
+                <img src="images/kamikaze.png">
+              </section>
+
+              <section class="text textKamikaze">
+                <h2>Мы принесём себя <br> в жертву во имя <br> луны</h2>
+                <p>У студента только одна попытка,<br>чтобы сделать хорошо,<br>они теперь как камикадзе</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 15 modalPlane -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyPlaneWrapper">
+
+              <section class="kamikaze">
+                <img src="images/kamikaze.png">
+              </section>
+
+              <section class="text textKamikaze">
+                <h2>Мы принесём себя <br> в жертву во имя <br> луны</h2>
+                <p>У студента только одна попытка,<br>чтобы сделать хорошо,<br>они теперь как камикадзе</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 16 modalPlane -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyPlaneWrapper">
+
+              <section class="kamikaze">
+                <img src="images/kamikaze.png">
+              </section>
+
+              <section class="text textKamikaze">
+                <h2>Мы принесём себя <br> в жертву во имя <br> луны</h2>
+                <p>У студента только одна попытка,<br>чтобы сделать хорошо,<br>они теперь как камикадзе</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 17 modalPlane -->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyPlaneWrapper">
+
+              <section class="kamikaze">
+                <img src="images/kamikaze.png">
+              </section>
+
+              <section class="text textKamikaze">
+                <h2>Мы принесём себя <br> в жертву во имя <br> луны</h2>
+                <p>У студента только одна попытка,<br>чтобы сделать хорошо,<br>они теперь как камикадзе</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 18 ВЫХОДНОЙ-->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 19 ВЫХОДНОЙ-->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 20 modalCurators-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyCuratorsWrapper">
+
+              <div class="filval">
+                <img src="images/filval.png">
+              </div>
+
+              <section class="text textCurators">
+                <h2>Стоп! Это же...</h2>
+                <p>Валера, Филипп, перелогиньтесь</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 21 modalFire-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyFireWrapper">
+
+              <section class="fireAnimation">
+                <div class="fire">
+                  <img src="images/fire.png">
+                </div>
+
+                <div class="cactus2days">
+                  <img src="images/cactus2days.png">
+                </div>
+              </section>
+
+              <section class="text textFire">
+                <h2>Минимизируй<br>ущерб</h2>
+                <p> И беги в укрытие.<br>Студенты в огне.<br>Они уже ничего хорошего не успеют сделать.</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 22 modalFire-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyFireWrapper">
+
+              <section class="fireAnimation">
+                <div class="fire">
+                  <img src="images/fire.png">
+                </div>
+
+                <div class="cactus2days">
+                  <img src="images/cactus2days.png">
+                </div>
+              </section>
+
+              <section class="text textFire">
+                <h2>Минимизируй<br>ущерб</h2>
+                <p> И беги в укрытие.<br>Студенты в огне.<br>Они уже ничего хорошего не успеют сделать.</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 23 modalFire-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyFireWrapper">
+
+              <section class="fireAnimation">
+                <div class="fire">
+                  <img src="images/fire.png">
+                </div>
+
+                <div class="cactus2days">
+                  <img src="images/cactus2days.png">
+                </div>
+              </section>
+
+              <section class="text textFire">
+                <h2>Минимизируй<br>ущерб</h2>
+                <p> И беги в укрытие.<br>Студенты в огне.<br>Они уже ничего хорошего не успеют сделать.</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 24 ДЕДЛАЙН -->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 25 ВЫХОДНОЙ-->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 26 ВЫХОДНОЙ-->
+      <div class="undisplayed modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="undisplayed modal-content">
+          <span class="close close_multi">×</span>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- MODAL 27 modalAfter-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyAfterWrapper">
+
+              <section class="image">
+                <div class="saw">
+                  <img src="images/saw.png">
+                </div>
+                <div class="cactus">
+                  <img class="animation" src="images/cactussaw.png">
+                </div>
+              </section>
+
+                <section class="text textAfter">
+                  <h2>Я ХОЧУ СЫГРАТЬ<br> С ТОБОЙ В ИГРУ</h2>
+                  <p></p>
+                </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 28 modalAfter-->
+      <div class="modal modal_multi">
+        <!-- MODAL CONTENT -->
+        <div class="wrap">
+          <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="bodyAfterWrapper">
+
+              <section class="image">
+                <div class="saw">
+                  <img src="images/saw.png">
+                </div>
+                <div class="cactus">
+                  <img class="animation" src="images/cactussaw.png">
+                </div>
+              </section>
+
+                <section class="text textAfter">
+                  <h2>Я ХОЧУ СЫГРАТЬ<br> С ТОБОЙ В ИГРУ</h2>
+                  <p></p>
+                </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="javascripts/modals.js" charset="utf-8"></script>
+
+  </body>
+</html>

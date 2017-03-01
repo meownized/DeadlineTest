@@ -1,0 +1,35 @@
+.textFire {
+  padding-top: 100px;
+  margin-left: 370px;
+}
+
+.cactus2days {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  margin-top: 50px;
+  margin-left: 85px;
+}
+
+.fire {
+  position: absolute;
+  margin: 285px 0 0 100px;
+  width: 115px;
+}
+
+.fire{
+  animation: fireAnimation linear .15s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0%;
+}
+
+@keyframes fireAnimation{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+
+  100% {
+    transform:  translate(0px,5px)  ;
+  }
+
+}

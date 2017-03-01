@@ -1,0 +1,59 @@
+.textIcon {
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.bodyIconsWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section.animationWrapper {
+  position: relative;
+}
+
+figure {
+  width: 150px;
+  position: relative;
+  margin-left: 120px;
+  margin-top: 150px;
+  z-index: 2;
+}
+
+.planet {
+  position: relative;
+  width:50px;
+  height:50px;
+}
+
+.planet#one {
+  position: absolute;
+  margin: 250px 20px 20px 48px;
+}
+
+.planet#two {
+  position: absolute;
+  margin: 150px 40px 40px 248px;
+  /*animation-delay: 0.2s;*/
+}
+
+.planet#three {
+  position: absolute;
+  margin: 79px 60px 60px 92px;
+}
+
+.planet{
+  animation: planetRoration linear 10s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes planetRoration{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(360deg) ;
+  }

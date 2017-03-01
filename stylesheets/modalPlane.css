@@ -1,0 +1,25 @@
+.kamikaze {
+  position: absolute;
+  margin-left: 50px;
+  height: 250px;
+  width: 250px;
+  min-width: 250px;
+}
+
+.textKamikaze {
+margin-top: 135px;
+}
+
+section.textKamikaze > p {
+  margin-top: 30px;
+}
+
+.kamikaze{
+  animation: kamikazeAnimation ease .1s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+}
+
+@keyframes kamikazeAnimation{
+  0% { transform:  translate(0px,0px);}
+  50% {transform:  translate(-2px,-2px);}
